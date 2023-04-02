@@ -1,0 +1,8 @@
+.wrap {
+    display: flex;
+    gap: 5px;
+}
+
+p {
+    max-width: 600px;
+}

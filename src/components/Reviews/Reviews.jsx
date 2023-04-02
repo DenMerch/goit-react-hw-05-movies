@@ -10,7 +10,6 @@ export const Reviews = () => {
         const getMoviesList = async () => {
             try {
                 const responseCredits = await fetchReviewsById(id);
-                console.log(responseCredits.data.results);
                 setReviews(responseCredits.data.results)
 
             } catch (error) { }
@@ -21,9 +20,8 @@ export const Reviews = () => {
 
     return (
         <div>
-            {reviews ?
-                <ul>  {reviews.map((item) => (<ReviewsItem key={item.id} data={item} />))}</ul>
-                : <p>We don't have any reviews</p>}
+            {reviews.length !== 0 ? <ul>{reviews.map((item) => (<ReviewsItem key={item.id} data={item} />))}</ul> :
+                <p>We don't have any reviews</p>}
         </div>
     )
 }

@@ -1,0 +1,8 @@
+.section {
+    margin: 20px;
+}
+
+.navLink {
+    display: flex;
+    gap: 10px;
+}
