@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { fetchTrendingMovie } from "../../Utils/FetchData";
-import { MovieList } from "../MovieList/MovieList"
+import { MovieList } from "../../components/MovieList/MovieList"
 
 export const Home = () => {
     const [movieLists, setMovieLists] = useState('');

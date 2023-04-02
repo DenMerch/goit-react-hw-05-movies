@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchCreditsById } from "../../Utils/FetchData";
+import { CastItem } from "../CastsItem/CastsItem";
 
 export const Cast = () => {
     const { id } = useParams();
@@ -16,11 +17,9 @@ export const Cast = () => {
         getMoviesList()
 
     }, [id])
-    console.log(actors);
-
     return (
         <ul>
-            kjegafhbiogahbin
+            {actors && actors.map(actor => (<CastItem key={actor.id} item={actor} />))}
         </ul>
     )
 }

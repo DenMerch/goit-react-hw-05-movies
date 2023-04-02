@@ -6,7 +6,6 @@ import { BackLink } from "../BackLink/backLink";
 export const MovieDetail = () => {
     const { id } = useParams();
     const [movie, setMovie] = useState('');
-
     const location = useLocation();
     const backLinkHref = location.state?.from ?? "/";
     useEffect(() => {

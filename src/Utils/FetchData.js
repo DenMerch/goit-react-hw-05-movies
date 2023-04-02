@@ -14,6 +14,9 @@ async function fetchCreditsById(value) {
     const response = await axios.get(`${API_URL}movie/${value}/credits?api_key=${API_KEY}&language=en-US`);
     return response;
 }
+async function fetchReviewsById(value) {
+    const response = await axios.get(`${API_URL}movie/${value}/reviews?api_key=${API_KEY}&language=en-US&page=1`);
+    return response;
+}
 
-
-export { fetchTrendingMovie, fetchMovieById, fetchCreditsById };
+export { fetchTrendingMovie, fetchMovieById, fetchCreditsById, fetchReviewsById };

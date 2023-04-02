@@ -14,8 +14,7 @@ export const Layout = () => {
             <Suspense fallback={<div>Loading...</div>}>
                 <Outlet />
             </Suspense>
-            {/* <Route path="/movies" element={<Products />} /> */}
-            {/* <Route path="*" element={<NotFound />} /> */}
+
 
 
 
