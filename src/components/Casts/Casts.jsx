@@ -16,6 +16,7 @@ export const Cast = () => {
         getMoviesList()
 
     }, [id])
+    console.log(actors);
 
     return (
         <ul>
