@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-export const MovieItem = ({ id, movie }) => {
+export const MovieItem = ({ id, title }) => {
 
     return (
         <li >
-            <Link to={`/movies/:${movie.id}`}>{movie.title}</Link>
+            <Link to={`/movies/${id}`}>{title}</Link>
         </li >
     );
 }

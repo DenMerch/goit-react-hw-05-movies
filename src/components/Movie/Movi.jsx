@@ -1,7 +1,7 @@
-export const Movie = ({ id }) => {
+export const Movie = () => {
 
-    console.log(id);
+
     return (
-        <>{id}</>
+        <>kjvrbah</>
     )
 }
