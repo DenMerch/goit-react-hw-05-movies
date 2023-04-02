@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import css from './Layout.module.css'
