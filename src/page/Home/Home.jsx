@@ -18,7 +18,7 @@ export const Home = () => {
 
     return (
         <>
-            <h1>Tremding toodeay</h1>
+            <h1>Trending today</h1>
 
             {movieLists && <MovieList movieList={movieLists} />}
 
