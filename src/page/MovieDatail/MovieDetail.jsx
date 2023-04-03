@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { Link, Outlet, useLocation, useParams } from "react-router-dom";
 import { fetchMovieById } from "../../Utils/FetchData";
-import { BackLink } from "../BackLink/backLink";
+import { BackLink } from "../../components/BackLink/backLink";
 import css from './MovieDetail.module.css'
 
 export const MovieDetail = () => {
