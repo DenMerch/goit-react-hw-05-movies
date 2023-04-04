@@ -23,7 +23,7 @@ export const Form = ({ submit }) => {
                 autoComplete="off"
                 autoFocus
                 onChange={handleInput}
-                placeholder="Search images and photos"
+                placeholder="Search movie"
             />
             <button type="submit" className={css.SearchFormButton} onClick={handBtnSubmit}>
                 <span className={css.SearchFormButtonLabel}>Search</span>
